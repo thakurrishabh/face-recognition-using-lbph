@@ -4,6 +4,8 @@ This project I've done as part of my own interest.
 
 Technology used: Python, Opencv, LBPH, viola jones face detection classifier
 
+To perform LBPH I've created a module lbph.py which contains the functions required to perform lbph.
+
 Introduction and Working:
 Face recognition is performed using local binary pattern histograms(lbph) and face detection has been done using viola jones haar cascade classifier. The user has to first run facerecognition.py to register his face by selecting 1 to train the algorithm followed by entering password and name. The algorithm takes 64 images of the user and stores in a folder called database. The algorithm then runs LBPH on the images and stores the trained classifier in trainedRec.py. The user can then select recognize to test whether he is an authorized person or not. The threshold posed by the condition if (prediction[1])<100 should be adjusted to adjust the sensitivity of face recognition.
 
